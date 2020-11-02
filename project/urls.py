@@ -1,0 +1,53 @@
+from django.contrib import admin
+from django.urls import path, include
+from MyApp import views
+
+
+urlpatterns = [
+    path('MyApp/',include('MyApp.urls')),
+    path('admin/', admin.site.urls),# Django站点管理
+    path('', views.new_login),
+    path('new_login/', views.new_login),
+    path('doctor_regist/', views.doctor_regist),
+    path('doctor_login/', views.doctor_login),
+    path('user_choose/', views.user_choose),
+    path('patient_manage/',views.patient_manage),
+    path('work_time_search/', views.work_time_search),
+    path('out_hospital/', views.out_hospital),
+    path('exit/', views.exit),
+    path('return1/', views.return1),
+    path('return2/',views.return2),
+    path('return3/',views.return3),
+    path('return4/', views.return4),
+    path('return5/', views.return5),
+    path('return6/', views.return6),
+    path('distribute_room/', views.distribute_room),
+    path('doctor_choose/', views.doctor_choose),
+    path('display/', views.display),
+    path('insert_deal_method/', views.insert_deal_method),
+    path('search_room/', views.search_room),
+    path('display/', views.display),
+    path('guahao/', views.guahao),
+    path('search_p/', views.search_p),
+    path('search_d/', views.search_d),
+    path('medicine/', views.medicine),
+    path('add_patient/', views.add_patient),
+    path('search_by_patient_name/', views.search_by_patient_name),
+    path('search_by_patient_dept/', views.search_by_patient_dept),
+    path('diagnosis_detail/', views.diagnosis_detail),
+    path('search_by_doctor_name/', views.search_by_doctor_name),
+    path('search_by_doctor_dept/', views.search_by_doctor_dept),
+    path('search_medicine/', views.search_medicine),
+    path('take_medicine/', views.take_medicine),
+    path('add_medicine/', views.add_medicine),
+    path('alter/', views.alter),
+    path('back1/', views.back1),
+    path('back2/', views.back2),
+    path('back3/', views.back3),
+    path('back4/', views.back4),
+    path('work1/', views.work1),
+    path('work2/', views.work2),
+    path('alter_work_time/', views.alter_work_time),
+    path('add_medicine_type/', views.add_medicine_type),
+]
+
